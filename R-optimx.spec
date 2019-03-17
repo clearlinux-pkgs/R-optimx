@@ -4,16 +4,12 @@
 #
 Name     : R-optimx
 Version  : 2018.7.10
-Release  : 7
+Release  : 8
 URL      : https://cran.r-project.org/src/contrib/optimx_2018-7.10.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/optimx_2018-7.10.tar.gz
 Summary  : Expanded Replacement and Extension of the 'optim' Function
 Group    : Development/Tools
 License  : GPL-2.0
-Requires: R-BB
-Requires: R-dfoptim
-Requires: R-numDeriv
-Requires: R-ucminf
 BuildRequires : R-BB
 BuildRequires : R-dfoptim
 BuildRequires : R-numDeriv
@@ -36,11 +32,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1538331000
+export SOURCE_DATE_EPOCH=1552810625
 
 %install
+export SOURCE_DATE_EPOCH=1552810625
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1538331000
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -75,8 +71,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library optimx|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  optimx || :
 
 
 %files
@@ -133,3 +128,17 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/optimx/help/paths.rds
 /usr/lib64/R/library/optimx/html/00Index.html
 /usr/lib64/R/library/optimx/html/R.css
+/usr/lib64/R/library/optimx/tests/bdstest.R
+/usr/lib64/R/library/optimx/tests/hobbs.R
+/usr/lib64/R/library/optimx/tests/jonesrun.R
+/usr/lib64/R/library/optimx/tests/maxfn.R
+/usr/lib64/R/library/optimx/tests/rosenbrock.R
+/usr/lib64/R/library/optimx/tests/run1param.R
+/usr/lib64/R/library/optimx/tests/simplefuntst.R
+/usr/lib64/R/library/optimx/tests/snsimple.R
+/usr/lib64/R/library/optimx/tests/snwood.R
+/usr/lib64/R/library/optimx/tests/ssqbtest.R
+/usr/lib64/R/library/optimx/tests/tfnchk.R
+/usr/lib64/R/library/optimx/tests/tgrchk.R
+/usr/lib64/R/library/optimx/tests/tkktc.R
+/usr/lib64/R/library/optimx/tests/trig1507.R
