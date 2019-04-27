@@ -4,7 +4,7 @@
 #
 Name     : R-optimx
 Version  : 2018.7.10
-Release  : 9
+Release  : 10
 URL      : https://cran.r-project.org/src/contrib/optimx_2018-7.10.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/optimx_2018-7.10.tar.gz
 Summary  : Expanded Replacement and Extension of the 'optim' Function
