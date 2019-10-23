@@ -4,21 +4,21 @@
 #
 Name     : R-optimx
 Version  : 2018.7.10
-Release  : 14
+Release  : 15
 URL      : https://cran.r-project.org/src/contrib/optimx_2018-7.10.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/optimx_2018-7.10.tar.gz
 Summary  : Expanded Replacement and Extension of the 'optim' Function
 Group    : Development/Tools
 License  : GPL-2.0
-Requires: R-BB
-Requires: R-dfoptim
+Requires: R-minqa
 Requires: R-numDeriv
-Requires: R-ucminf
 BuildRequires : R-BB
 BuildRequires : R-dfoptim
+BuildRequires : R-minqa
 BuildRequires : R-numDeriv
 BuildRequires : R-ucminf
 BuildRequires : buildreq-R
+BuildRequires : util-linux
 
 %description
 function to call to several function minimization codes in R in a single
@@ -36,10 +36,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1569366229
+export SOURCE_DATE_EPOCH=1571870553
 
 %install
-export SOURCE_DATE_EPOCH=1569366229
+export SOURCE_DATE_EPOCH=1571870553
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
