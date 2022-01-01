@@ -4,7 +4,7 @@
 #
 Name     : R-optimx
 Version  : 2021.10.12
-Release  : 36
+Release  : 37
 URL      : https://cran.r-project.org/src/contrib/optimx_2021-10.12.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/optimx_2021-10.12.tar.gz
 Summary  : Expanded Replacement and Extension of the 'optim' Function
@@ -32,10 +32,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1634223120
+export SOURCE_DATE_EPOCH=1641068466
 
 %install
-export SOURCE_DATE_EPOCH=1634223120
+export SOURCE_DATE_EPOCH=1641068466
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
