@@ -4,7 +4,7 @@
 #
 Name     : R-optimx
 Version  : 2021.10.12
-Release  : 37
+Release  : 38
 URL      : https://cran.r-project.org/src/contrib/optimx_2021-10.12.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/optimx_2021-10.12.tar.gz
 Summary  : Expanded Replacement and Extension of the 'optim' Function
