@@ -4,7 +4,7 @@
 #
 Name     : R-optimx
 Version  : 2022.4.30
-Release  : 45
+Release  : 46
 URL      : https://cran.r-project.org/src/contrib/optimx_2022-4.30.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/optimx_2022-4.30.tar.gz
 Summary  : Expanded Replacement and Extension of the 'optim' Function
